@@ -11,7 +11,7 @@ namespace controller_api_v1.Context
         { }
 
         public DbSet<Collaborator>? Collaborators => Set<Collaborator>();
-        public DbSet<Tag>? tags => Set<Tag>();
+        public DbSet<Tag>? Tags => Set<Tag>();
 
     }
 }

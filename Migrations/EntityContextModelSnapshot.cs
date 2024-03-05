@@ -36,9 +36,12 @@ namespace controller_api_v1.Migrations
                     b.Property<string>("description")
                         .HasColumnType("text");
 
+                    b.Property<bool?>("isActive")
+                        .HasColumnType("boolean");
+
                     b.HasKey("id");
 
-                    b.ToTable("tags");
+                    b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("controller_api_v1.Models.Entity.Collaborator", b =>
@@ -54,6 +57,9 @@ namespace controller_api_v1.Migrations
 
                     b.Property<string>("document")
                         .HasColumnType("text");
+
+                    b.Property<bool?>("isActive")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("nickName")
                         .HasColumnType("text");

@@ -7,7 +7,7 @@
         public string? nickName { get; set; }
 
         public string? document { get; set; }
-      
+        public bool? isActive { get; set; }
         public DateTime? created_at { get; set; }
     }
 }
